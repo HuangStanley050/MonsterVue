@@ -13,18 +13,24 @@
           <h1 class="text-center">YOU</h1>
           <div class="healthbar">
             <div
+              :style="{width: playerHealth + '%'}"
               class="healthbar text-center"
               style="background-color: green; margin: 0; color: white;"
-            ></div>
+            >
+              {{playerHealth}}
+            </div>
           </div>
         </div>
         <div class="small-6 columns">
           <h1 class="text-center">MONSTER</h1>
           <div class="healthbar">
             <div
+              :style="{width: monsterHealth + '%'}"
               class="healthbar text-center"
               style="background-color: green; margin: 0; color: white;"
-            ></div>
+            >
+              {{monsterHealth}}
+            </div>
           </div>
         </div>
       </section>
@@ -49,5 +55,6 @@
         </div>
       </section>
     </div>
+    <script src="./src/app.js"></script>
   </body>
 </html>
