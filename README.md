@@ -1,2 +1,0 @@
-# MonsterVue
-Created with CodeSandbox
